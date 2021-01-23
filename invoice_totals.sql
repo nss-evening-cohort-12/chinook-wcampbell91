@@ -2,7 +2,7 @@ SELECT
     Invoice.Total,
     Customer.Country,
     Employee.FirstName AS 'employee first',
-    Employee.LastName AS 'employye last',
+    Employee.LastName AS 'employee last',
     Customer.FirstName AS 'customer first',
     Customer.LastName AS 'customer last'
 FROM Invoice
