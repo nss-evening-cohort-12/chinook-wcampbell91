@@ -1,1 +1,4 @@
-SELECT COUNT(*) FROM InvoiceLine WHERE InvoiceId = '37'
+SELECT 
+    invoiceId,
+    COUNT(*)
+    FROM InvoiceLine GROUP BY InvoiceId
