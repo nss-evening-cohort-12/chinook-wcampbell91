@@ -1,4 +1,8 @@
-SELECT
-    DISTINCT BillingCountry,
-    SUM(Total)
-FROM Invoice GROUP BY BillingCountry
+SELECT 
+    MAX(TotalSales),
+    BillingCountry
+FROM
+    (SELECT
+        DISTINCT BillingCountry,
+        SUM(Total) as TotalSales
+    FROM Invoice GROUP BY BillingCountry)
